@@ -5,7 +5,7 @@ entre os sensores e permitir a transmissão dos dados coletados. Esses dados ser
 visualizados e analisados em tempo real.
 
  ## Proposta comercial
-
+ [Proposta_comercial.pdf](https://github.com/vinussp/Projeto-de-Redes---Monitoramento-de-Temperatura/files/12811266/Proposta_comercial.pdf)
  ## Plano de Ataque
 
  ## Cronograma
