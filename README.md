@@ -1,4 +1,4 @@
-# Projeto-de-Redes---Monitoramento-de-Temperatura
+# Projeto de Redes (FMJV): Monitoramento de Temperatura
 
  ## Proposta comercial
 
