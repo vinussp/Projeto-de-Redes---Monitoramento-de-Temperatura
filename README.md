@@ -1,4 +1,4 @@
-![FMJV](https://github.com/vinussp/Projeto-de-Redes---Monitoramento-de-Temperatura/assets/78106775/39230425-439d-46e0-94ee-810f080715cc)
+![fmjv](https://github.com/vinussp/Projeto-de-Redes---Monitoramento-de-Temperatura/assets/78106775/5f245d1f-9381-48c0-a267-fd3aa94b9ddc)
 
 # Projeto de Redes (FMJV): Monitoramento de Temperatura
 Este projeto IoT envolve o uso de um módulo de rede para facilitar a comunicação
