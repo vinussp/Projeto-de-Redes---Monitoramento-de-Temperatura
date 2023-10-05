@@ -9,7 +9,7 @@ visualizados e analisados em tempo real.
  ## Plano de Ataque
 
  ## Cronograma
-
+ [CRONOGRAMA.pdf](https://github.com/vinussp/Projeto-de-Redes---Monitoramento-de-Temperatura/files/12811281/CRONOGRAMA.pdf)
  ### 04/10/2023
 - 
 -
