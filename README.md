@@ -18,3 +18,6 @@ visualizados e analisados em tempo real.
 Segue o link da simulação do dispositivo utilizando a plataforma wokwi. Nela usamos o microcontrolador ESP32 para controlar o sensor de temperatiura e humidade DHT22. 
 https://wokwi.com/projects/382148746978339841
 
+A cnoexão de dados é feita via software Node-Red, no qual recebe os dados via broker mqtt (utilizando um broker test disponibilizado pelo mqtt). O node red roda em um container ubuntu criado com o software Docker, através dele é disponiblizado um endereço onde acessamos o node red para fazermos os nós necessários para a conexão. No nosso caso, os dados são coletados em uma planilha Google Sheet, disponibilizada atraves do SaaS Google Cloud, onde possibilita a transmissão dos dados e o preenchimento da planilha para que os dados sejam utilizados como quiser.
+segue o link da planilha criada: 
+https://docs.google.com/spreadsheets/d/1e3PiWuxI4qP67w1QK4ryX9rTR2_JE_VGB4VOJ72VHoA/edit?usp=sharing
