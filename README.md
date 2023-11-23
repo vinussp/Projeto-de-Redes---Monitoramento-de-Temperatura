@@ -14,4 +14,7 @@ visualizados e analisados em tempo real.
  ### 04/10/2023
 - 
 -
--
+## Dispositivo FMJV
+Segue o link da simulação do dispositivo utilizando a plataforma wokwi. Nela usamos o microcontrolador ESP32 para controlar o sensor de temperatiura e humidade DHT22. 
+https://wokwi.com/projects/382148746978339841
+
