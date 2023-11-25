@@ -104,6 +104,10 @@ Projeto consiste na criação de um dispositivo que monitora a temperatura e hum
 
    https://docs.google.com/spreadsheets/d/1e3PiWuxI4qP67w1QK4ryX9rTR2_JE_VGB4VOJ72VHoA/edit?usp=sharing
 
+   É importante copiar a conta de serviço criada e coloar como editor na planilha, para que o node-red possa acessar e introduzir os dados.
+
+   Video utilizado para auxiliar nesse passo: https://www.youtube.com/watch?v=JKh9qn0fxew
+
 ## Configurando o Node-Red
 
    Inicialmente é preciso preparar o fluxo para a transmissão dos dados. Em gerenciar paletas e instalar nós, é necessário intalar os nós Dashboard "node-red-dashboard" e Google Sheets "node-red-contrib-google-sheets".
@@ -117,4 +121,12 @@ Projeto consiste na criação de um dispositivo que monitora a temperatura e hum
 
    Dessa forma, ja podemos visualizar os dados enviados pelo sensor em um dashboard.
 
-   Para conf
+   Para configurarmos a transmissão para o Google Sheet, colocamos os nós Gsheet em cada um dos nós (temp e hum) e o prreechemos. Na parte creds, editamos e colamos o aquivo JSON obtido na criação da chave da conta de serviço do google cloud. (Abrir o aqruivo com o vscode, copiar o conteudo e colar na aba propriedades). O method escolhido é o Append Row (preencher as celulas em fila). O SpreadsheetID é o id da planilha criada, no nosso caso "1e3PiWuxI4qP67w1QK4ryX9rTR2_JE_VGB4VOJ72VHoA". E a cells é no seguinte formato Página1!A2:A1000 para temperatura e Página2!A2:A1000 para humidade.
+
+   É importante se colocar um nó de debug para verificar possiveis erros.
+
+   ## Resultado final
+
+   No final podemos ver o dashboard mostrando os dados coletaados em tempo real e os dados sendo preenchidos na tabela criada. Esses dados podem ser utilizados para uma analise mais criteriosa, e o node-red pode tambem transmiti-los para outra plataforma IOT que se desejar.
+
+   
