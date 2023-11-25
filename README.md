@@ -29,17 +29,19 @@ Projeto consiste na criação de um dispositivo que monitora a temperatura e hum
 
 ## 📁 Passo a passo
 # Habilitar o WSL na maquina
-  https://learn.microsoft.com/pt-br/windows/wsl/install-manual
+   https://learn.microsoft.com/pt-br/windows/wsl/install-manual;
    O WSL é um subsistema do Windows para Linux que permite que os desenvolvedores executem um ambiente GNU/Linux, incluindo a maioria das ferramentas de linha de comando, utilitários e aplicativos, diretamente      no Windows, sem modificações e sem a sobrecarga de uma máquina virtual tradicional ou instalação dualboot.
    Ele é um passo importante na criação de uma maquina virtual linux na qual o broker vai ser instalado para receber os dados enviados pelo dispositivos e restransmiti-los para a plataforma IOT.
 
 # Instalação do Docker
-  https://www.docker.com/
+  https://www.docker.com/;
   O Docker é um conjunto de produtos de plataforma como serviço que usam virtualização de nível de sistema operacional para entregar software em pacotes chamados contêineres. Os contêineres são isolados uns dos    outros e agrupam seus próprios softwares, bibliotecas e arquivos de configuração.
   A utilização do docker serve para organizar e gerenciar os containers criados.
   
-## Utilzando o Docker
- Abrir 
+## Configurando o Docker
+   - Depois de instalado, abra o Docker para desktop, realize o cadastro para utilização;
+   - Vá em configurações, resorces e habilite para a integração com o WSL;
+
 
 
 
