@@ -41,8 +41,9 @@ Projeto consiste na criação de um dispositivo que monitora a temperatura e hum
   A utilização do docker serve para organizar e gerenciar os containers criados.
   
 # Configurando o Docker
-   - Depois de instalado, abra o Docker para desktop, realize o cadastro para utilização;
-   - Vá em configurações, resorces e habilite para a integração com o WSL;
+   - Depois de instalado, abra o Docker para desktop, realize o cadastro para utilização.
+   - Vá em configurações, resorces e habilite para a integração com o WSL.
+
 
 ## Node-red
    https://nodered.org/
