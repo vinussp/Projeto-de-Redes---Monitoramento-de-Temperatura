@@ -26,7 +26,7 @@ Projeto consiste na criação de um dispositivo que monitora a temperatura e hum
 -  ``IOT``
 
 ## 📁 Passo a passo
-# Habilitar o WSL na maquina
+# Habilitar o WSL na máquina
    https://learn.microsoft.com/pt-br/windows/wsl/install-manual
    
    O WSL é um subsistema do Windows para Linux que permite que os desenvolvedores executem um ambiente GNU/Linux, incluindo a maioria das ferramentas de linha de comando, utilitários e aplicativos, diretamente      no Windows, sem modificações e sem a sobrecarga de uma máquina virtual tradicional ou instalação dualboot.
@@ -69,6 +69,9 @@ Projeto consiste na criação de um dispositivo que monitora a temperatura e hum
    Nessa linha aparece a data na qual foi iniciado o programa, e no final o endereço de acesso pelo navegador.
    
 ## Simulação do Dispositivo FJMV
+
+ ![image](https://github.com/vinussp/Projeto-de-Redes---Monitoramento-de-Temperatura/assets/149007127/8808998f-6083-4b5b-aa76-4537ac5ba85a)
+
    Segue o link da simulação do dispositivo utilizando a plataforma WOKWI. Nela usamos o microcontrolador ESP32 para controlar o sensor de temperatiura e humidade DHT22. 
 
    https://wokwi.com/projects/382148746978339841
@@ -111,7 +114,7 @@ Projeto consiste na criação de um dispositivo que monitora a temperatura e hum
 
 ## Configurando o Node-Red
 
-   Inicialmente é preciso preparar o fluxo para a transmissão dos dados. Em gerenciar paletas e instalar nós, é necessário intalar os nós Dashboard "node-red-dashboard" e Google Sheets "node-red-contrib-google-sheets".
+   Inicialmente é preciso preparar o fluxo para a transmissão dos dados. Em gerenciar paletas e instalar nós, é necessário instalar os nós Dashboard "node-red-dashboard" e Google Sheets "node-red-contrib-google-sheets".
 
    o Nó Dashboar serve para criar um relógio mostrador, para exibir as informações recebidas pelo broker. E o nó Google sheet serve para a transmissão dos dados para a planilha.
 
@@ -126,8 +129,11 @@ Projeto consiste na criação de um dispositivo que monitora a temperatura e hum
 
    É importante se colocar um nó de debug para verificar possiveis erros.
 
+   Video de auxilio para esse passo: https://www.youtube.com/watch?v=V55AebUq53g&t=322s
+
    ## Resultado final
 
    No final podemos ver o dashboard mostrando os dados coletaados em tempo real e os dados sendo preenchidos na tabela criada. Esses dados podem ser utilizados para uma analise mais criteriosa, e o node-red pode tambem transmiti-los para outra plataforma IOT que se desejar.
 
    
+
