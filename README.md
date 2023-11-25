@@ -74,8 +74,18 @@ Projeto consiste na criação de um dispositivo que monitora a temperatura e hum
 
    Utilizamos o sensor DHT22 para a captação da temperatura e da humidade por ser um sensor de facil acesso e baixo custo. O integramos com a ESP32 por fazer nativamente a conexão por wifi paara a transmissão de    dados. Esses dados são transfmitidos para um broquer mqtt e depois enviados para a maquina virtual (container) e captados pelo node-red para a transmissão para a plataforma IOT.
 
-   O código para criado na linguagem C, pode ser acessado nos arquivos desse GitHub. Nele configuramos a conexão com o servidor broker mqtt
-   
- A cnoexão de dados é feita via software Node-Red, no qual recebe os dados via broker mqtt (utilizando um broker test disponibilizado pelo mqtt). O node red roda em um container ubuntu criado com o software Docker, através dele é disponiblizado um endereço onde acessamos o node red para fazermos os nós necessários para a conexão. No nosso caso, os dados são coletados em uma planilha Google Sheet, disponibilizada atraves do SaaS Google Cloud, onde possibilita a transmissão dos dados e o preenchimento da planilha para que os dados sejam utilizados como quiser.
+   O código para criado na linguagem C, pode ser acessado nos arquivos desse GitHub. Nele configuramos a conexão com o servidor broker mqtt:
+
+   test.mosquitto.org
+
+   Ele hospeda um servidor/corretor Eclipse Mosquitto MQTT disponível publicamente para testes. MQTT é um protocolo muito leve que usa um modelo de publicação/assinatura. Isso o torna adequado para mensagens        "máquina para máquina", como sensores de baixa potência ou dispositivos móveis.
+
+   No codigo também utilizamos a porta 1883 para a transmissão de dados. e configuramos a forma de pulicação das variaveis, com `/FJMV/temp` para a temperatura e `/FJMV/hum` para humidade.
+
+## Configurando o Node-Red
+
+ 
+
+No nosso caso, os dados são coletados em uma planilha Google Sheet, disponibilizada atraves do SaaS Google Cloud, onde possibilita a transmissão dos dados e o preenchimento da planilha para que os dados sejam utilizados como quiser.
 segue o link da planilha criada: 
 https://docs.google.com/spreadsheets/d/1e3PiWuxI4qP67w1QK4ryX9rTR2_JE_VGB4VOJ72VHoA/edit?usp=sharing
