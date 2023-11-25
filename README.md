@@ -2,7 +2,7 @@
 
 # Projeto de Redes (FMJV): Monitoramento de Temperatura
 Este projeto IoT envolve o uso de um módulo de rede para facilitar a comunicação
-entre os sensores e permitir a transmissão dos dados coletados. Esses dados serão disponibilizados para o usuário final por meio de um aplicativo móvel, onde poderão ser
+entre os sensores e permitir a transmissão dos dados coletados. Esses dados serão disponibilizados em uma planilha online no Google Sheets através do serviço da nuvem do Google Cloud, onde poderão ser
 visualizados e analisados em tempo real.
 
  ## Proposta comercial
@@ -14,6 +14,36 @@ visualizados e analisados em tempo real.
  ### 04/10/2023
 - 
 -
+
+<h1 align="center"> Monitoramento de temperatua </h1>
+
+
+# 📒 Resumo do projeto
+Projeto consiste na criação de um dispositivo que monitora a temperatura e humidade e transmite os dados via mqtt e os diponibiliza para uma plataforma IOT.
+
+## ✔️ Técnicas e tecnologias utilizadas
+
+- ``Docker e conteiners``
+- ``MQTT``
+-  ``IOT``
+
+## 📁 Passo a passo
+# Habilitar o WSL na maquina
+  https://learn.microsoft.com/pt-br/windows/wsl/install-manual
+   O WSL é um subsistema do Windows para Linux que permite que os desenvolvedores executem um ambiente GNU/Linux, incluindo a maioria das ferramentas de linha de comando, utilitários e aplicativos, diretamente      no Windows, sem modificações e sem a sobrecarga de uma máquina virtual tradicional ou instalação dualboot.
+   Ele é um passo importante na criação de uma maquina virtual linux na qual o broker vai ser instalado para receber os dados enviados pelo dispositivos e restransmiti-los para a plataforma IOT.
+
+# Instalação do Docker
+  https://www.docker.com/
+  O Docker é um conjunto de produtos de plataforma como serviço que usam virtualização de nível de sistema operacional para entregar software em pacotes chamados contêineres. Os contêineres são isolados uns dos    outros e agrupam seus próprios softwares, bibliotecas e arquivos de configuração.
+  A utilização do docker serve para organizar e gerenciar os containers criados.
+  
+## Utilzando o Docker
+ Abrir 
+
+
+
+
 ## Dispositivo FMJV
 Segue o link da simulação do dispositivo utilizando a plataforma wokwi. Nela usamos o microcontrolador ESP32 para controlar o sensor de temperatiura e humidade DHT22. 
 https://wokwi.com/projects/382148746978339841
