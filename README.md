@@ -141,5 +141,9 @@ Projeto consiste na criação de um dispositivo que monitora a temperatura e hum
 
    No final podemos ver o dashboard mostrando os dados coletaados em tempo real e os dados sendo preenchidos na tabela criada. Esses dados podem ser utilizados para uma analise mais criteriosa, e o node-red pode tambem transmiti-los para outra plataforma IOT que se desejar.
 
+   ![image](https://github.com/vinussp/Projeto-de-Redes---Monitoramento-de-Temperatura/assets/149007127/1a64bc47-3d60-4925-a042-d65d2310326b)
+
+   ![image](https://github.com/vinussp/Projeto-de-Redes---Monitoramento-de-Temperatura/assets/149007127/ca3a54e2-0413-404b-ac52-db8683879ec6)
+
    
 
