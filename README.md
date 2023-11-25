@@ -51,7 +51,7 @@ Projeto consiste na criação de um dispositivo que monitora a temperatura e hum
 
    No projeto, o Node-red faz a comunicação entre o boker mqtt e a a plataforma IOT. Ele também foi utilizado para a exibição dos dados em um Dashboard.
 
-# Inslando o Node-red no container
+# Instalando o Node-red no container
 
    https://nodered.org/docs/getting-started/docker
 
@@ -76,13 +76,26 @@ Projeto consiste na criação de um dispositivo que monitora a temperatura e hum
 
    O código para criado na linguagem C, pode ser acessado nos arquivos desse GitHub. Nele configuramos a conexão com o servidor broker mqtt:
 
-   test.mosquitto.org
+   https://test.mosquitto.org
 
    Ele hospeda um servidor/corretor Eclipse Mosquitto MQTT disponível publicamente para testes. MQTT é um protocolo muito leve que usa um modelo de publicação/assinatura. Isso o torna adequado para mensagens        "máquina para máquina", como sensores de baixa potência ou dispositivos móveis.
 
    No codigo também utilizamos a porta 1883 para a transmissão de dados. e configuramos a forma de pulicação das variaveis, com `/FJMV/temp` para a temperatura e `/FJMV/hum` para humidade.
 
 ## Configurando o Node-Red
+
+   Inicialmente é preciso preparar o fluxo para a transmissão dos dados. Em gerenciar paletas e instalar nós, é necessário intalar os nós Dashboard "node-red-dashboard" e Google Sheets "node-red-contrib-google-sheets".
+
+   o Nó Dashboar serve para criar um relógio mostrador, para exibir as informações recebidas pelo broker. E o nó Google sheet serve para a transmissão dos dados para a planilha.
+
+   Criamos dos nós mqtt in, um para a temperatura e outro para a humidade. Na sua configuração, colocamos o servidor "test.mosquitto.org" e a porta 1883, ajustamos o QoS para 0 e o tópico, `/FJMV/temp` para a temperatura e `/FJMV/hum` para humidade.
+
+   O proximo nó são os mostradores, um para temperatura e outro para humidade. Na sua configuração, editamos o Group, preenchendo o nome "FJMV" e editamos a tab com o nome "Home" e o icon "dashboard". Essa parte é comum para os dois.
+   Ainda na parte da ediçao, escolhemos o type: Gauge para temperatura e Donut para a humidade, editamos o label: Temperatura e humidade, o unit: ºC e %, o range: 0 a 45, temperatura e 0 a 100 humidade, ajustamos as cores e o nome no final, temp para temperatura e hum pata humidade.
+
+   Dessa forma, ja podemos visualizar os dados enviados pelo sensor em um dashboard.
+
+   # Transmissão dos dados para o Google Sheet
 
  
 
