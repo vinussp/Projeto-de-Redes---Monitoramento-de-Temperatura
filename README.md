@@ -82,6 +82,30 @@ Projeto consiste na criação de um dispositivo que monitora a temperatura e hum
 
    No codigo também utilizamos a porta 1883 para a transmissão de dados. e configuramos a forma de pulicação das variaveis, com `/FJMV/temp` para a temperatura e `/FJMV/hum` para humidade.
 
+    ## Transmissão dos dados para o Google Sheet
+
+ ## Criando uma conta no Google Cloud
+
+   Utilizamos essa referencia para a conexão:
+
+   https://flows.nodered.org/node/node-red-contrib-google-sheets
+
+   Para a coleta dos dados, utilizamos a plataforma iot do Google, a Google Cloud, que pode ser acessado pelo seguinte endereço:
+   
+   https://cloud.google.com/
+
+   Para a criação da conta é necessário o cadastro de um cartão de crédito, mas o serviço é gratuito para as funções que vamos utilizar.
+
+   Começamos criando um novo projeto na plataforma. Após isso, vamos em APIs e serviços, bibliotecas e pesquisamos por Google Sheets API e instalamos.
+
+   Entrar em IAM e admistrador, contas de serviço, e clicamos em criar conta de serviço. Ao criar a conta de serviço, conceda a essa conta de serviço acesso ao projeto selecionando o papel "proprietario".
+
+   Proximo passo é criar uma chave JSON, pára isso, clicamos na conta criada e depois em chaves. Clicamos em adicionar chave e depois em JSON e criar. Após isso, o arquivo JSON vai ser baixado na sua maquina.
+
+   Por ultimo, criar uma tabela no Google Sheet. Para o nosso projeto, a seguinte tabela foi criada: 
+
+   https://docs.google.com/spreadsheets/d/1e3PiWuxI4qP67w1QK4ryX9rTR2_JE_VGB4VOJ72VHoA/edit?usp=sharing
+
 ## Configurando o Node-Red
 
    Inicialmente é preciso preparar o fluxo para a transmissão dos dados. Em gerenciar paletas e instalar nós, é necessário intalar os nós Dashboard "node-red-dashboard" e Google Sheets "node-red-contrib-google-sheets".
@@ -95,10 +119,4 @@ Projeto consiste na criação de um dispositivo que monitora a temperatura e hum
 
    Dessa forma, ja podemos visualizar os dados enviados pelo sensor em um dashboard.
 
-   # Transmissão dos dados para o Google Sheet
-
- 
-
-No nosso caso, os dados são coletados em uma planilha Google Sheet, disponibilizada atraves do SaaS Google Cloud, onde possibilita a transmissão dos dados e o preenchimento da planilha para que os dados sejam utilizados como quiser.
-segue o link da planilha criada: 
-https://docs.google.com/spreadsheets/d/1e3PiWuxI4qP67w1QK4ryX9rTR2_JE_VGB4VOJ72VHoA/edit?usp=sharing
+   Para conf
