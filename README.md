@@ -56,15 +56,26 @@ Projeto consiste na criação de um dispositivo que monitora a temperatura e hum
    https://nodered.org/docs/getting-started/docker
 
    Utilizando o seguinte comando no powersheel executando como admnistrador:
-    `docker run -it -p 1880:1880 -v node_red_data:/data --name mynodered nodered/node-red`
    
+   `docker run -it -p 1880:1880 -v node_red_data:/data --name mynodered nodered/node-red`
 
+   Automaticamente o Docker criara um container linux contendo node-red, onde poderemos fazer os nós de conexão dos dados mqtt e a plataforma IOT.
 
+   No prompt de comando aparacerá o endereço para o acesso da pagina dos nós.
 
-## Dispositivo FMJV
-Segue o link da simulação do dispositivo utilizando a plataforma wokwi. Nela usamos o microcontrolador ESP32 para controlar o sensor de temperatiura e humidade DHT22. 
-https://wokwi.com/projects/382148746978339841
+   `24 Nov 22:40:15 - [info] Server now running at http://127.0.0.1:1880/`
 
-A cnoexão de dados é feita via software Node-Red, no qual recebe os dados via broker mqtt (utilizando um broker test disponibilizado pelo mqtt). O node red roda em um container ubuntu criado com o software Docker, através dele é disponiblizado um endereço onde acessamos o node red para fazermos os nós necessários para a conexão. No nosso caso, os dados são coletados em uma planilha Google Sheet, disponibilizada atraves do SaaS Google Cloud, onde possibilita a transmissão dos dados e o preenchimento da planilha para que os dados sejam utilizados como quiser.
+   Nessa linha aparece a data na qual foi iniciado o programa, e no final o endereço de acesso pelo navegador.
+   
+## Simulação do Dispositivo FJMV
+   Segue o link da simulação do dispositivo utilizando a plataforma WOKWI. Nela usamos o microcontrolador ESP32 para controlar o sensor de temperatiura e humidade DHT22. 
+
+   https://wokwi.com/projects/382148746978339841
+
+   Utilizamos o sensor DHT22 para a captação da temperatura e da humidade por ser um sensor de facil acesso e baixo custo. O integramos com a ESP32 por fazer nativamente a conexão por wifi paara a transmissão de    dados. Esses dados são transfmitidos para um broquer mqtt e depois enviados para a maquina virtual (container) e captados pelo node-red para a transmissão para a plataforma IOT.
+
+   O código para criado na linguagem C, pode ser acessado nos arquivos desse GitHub. Nele configuramos a conexão com o servidor broker mqtt
+   
+ A cnoexão de dados é feita via software Node-Red, no qual recebe os dados via broker mqtt (utilizando um broker test disponibilizado pelo mqtt). O node red roda em um container ubuntu criado com o software Docker, através dele é disponiblizado um endereço onde acessamos o node red para fazermos os nós necessários para a conexão. No nosso caso, os dados são coletados em uma planilha Google Sheet, disponibilizada atraves do SaaS Google Cloud, onde possibilita a transmissão dos dados e o preenchimento da planilha para que os dados sejam utilizados como quiser.
 segue o link da planilha criada: 
 https://docs.google.com/spreadsheets/d/1e3PiWuxI4qP67w1QK4ryX9rTR2_JE_VGB4VOJ72VHoA/edit?usp=sharing
