@@ -132,6 +132,9 @@ Projeto consiste na criação de um dispositivo que monitora a temperatura e hum
 
    É importante se colocar um nó de debug para verificar possiveis erros.
 
+   ![image](https://github.com/vinussp/Projeto-de-Redes---Monitoramento-de-Temperatura/assets/149007127/9d79d4c9-8f83-4026-97dd-6aae98fc4a4d)
+
+
    Video de auxilio para esse passo: https://www.youtube.com/watch?v=V55AebUq53g&t=322s
 
    ## Resultado final
