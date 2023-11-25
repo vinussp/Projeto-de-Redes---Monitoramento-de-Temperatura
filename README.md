@@ -11,9 +11,7 @@ visualizados e analisados em tempo real.
 
  ## Cronograma
  ![cronograma](https://github.com/vinussp/Projeto-de-Redes---Monitoramento-de-Temperatura/assets/78106775/295285c7-75b9-4003-9e37-b23ea643fff5)
- ### 04/10/2023
-- 
--
+
 
 <h1 align="center"> Monitoramento de temperatua </h1>
 
@@ -42,16 +40,23 @@ Projeto consiste na criação de um dispositivo que monitora a temperatura e hum
   .
   A utilização do docker serve para organizar e gerenciar os containers criados.
   
-## Configurando o Docker
+# Configurando o Docker
    - Depois de instalado, abra o Docker para desktop, realize o cadastro para utilização;
    - Vá em configurações, resorces e habilite para a integração com o WSL;
 
 ## Node-red
    https://nodered.org/
    
-   O Node-RED é uma ferramenta de desenvolvimento de baixo código baseada em fluxo para programação visual desenvolvida originalmente pela IBM para conectar dispositivos de hardware, APIs e serviços online como parte da Internet das Coisas.
+   O Node-RED é uma ferramenta de desenvolvimento de baixo código baseada em fluxo para programação visual desenvolvida originalmente pela IBM para conectar dispositivos de hardware, APIs e serviços online como     parte da Internet das Coisas.
 
    No projeto, o Node-red faz a comunicação entre o boker mqtt e a a plataforma IOT. Ele também foi utilizado para a exibição dos dados em um Dashboard.
+
+# Inslando o Node-red no container
+
+   https://nodered.org/docs/getting-started/docker
+
+   Utilizando o seguinte comando no powersheel executando como admnistrador:
+    `docker run -it -p 1880:1880 -v node_red_data:/data --name mynodered nodered/node-red`
    
 
 
