@@ -82,8 +82,6 @@ Projeto consiste na criação de um dispositivo que monitora a temperatura e hum
 
    No codigo também utilizamos a porta 1883 para a transmissão de dados. e configuramos a forma de pulicação das variaveis, com `/FJMV/temp` para a temperatura e `/FJMV/hum` para humidade.
 
-    ## Transmissão dos dados para o Google Sheet
-
  ## Criando uma conta no Google Cloud
 
    Utilizamos essa referencia para a conexão:
