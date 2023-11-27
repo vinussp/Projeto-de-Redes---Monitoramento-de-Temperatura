@@ -13,7 +13,7 @@ visualizados e analisados em tempo real.
  ![cronograma](https://github.com/vinussp/Projeto-de-Redes---Monitoramento-de-Temperatura/assets/78106775/295285c7-75b9-4003-9e37-b23ea643fff5)
 
 
-<h1 align="center"> Monitoramento de temperatua </h1>
+<h1 align="center"> Monitoramento de temperatura </h1>
 
 
 # 📒 Resumo do projeto
@@ -31,7 +31,7 @@ Projeto consiste na criação de um dispositivo que monitora a temperatura e hum
    
    O WSL é um subsistema do Windows para Linux que permite que os desenvolvedores executem um ambiente GNU/Linux, incluindo a maioria das ferramentas de linha de comando, utilitários e aplicativos, diretamente      no Windows, sem modificações e sem a sobrecarga de uma máquina virtual tradicional ou instalação dualboot.
    
-   Ele é um passo importante na criação de uma maquina virtual linux na qual o broker vai ser instalado para receber os dados enviados pelo dispositivos e restransmiti-los para a plataforma IOT.
+   Ele é um passo importante na criação de uma máquina virtual linux na qual o broker vai ser instalado para receber os dados enviados pelo dispositivos e restransmiti-los para a plataforma IOT.
 
 # Instalação do Docker
   https://www.docker.com/
@@ -43,7 +43,6 @@ Projeto consiste na criação de um dispositivo que monitora a temperatura e hum
 # Configurando o Docker
    - Depois de instalado, abra o Docker para desktop, realize o cadastro para utilização.
    - Vá em configurações, resorces e habilite para a integração com o WSL.
-
 
 ## Node-red
    https://nodered.org/
@@ -60,7 +59,7 @@ Projeto consiste na criação de um dispositivo que monitora a temperatura e hum
    
    `docker run -it -p 1880:1880 -v node_red_data:/data --name mynodered nodered/node-red`
 
-   Automaticamente o Docker criara um container linux contendo node-red, onde poderemos fazer os nós de conexão dos dados mqtt e a plataforma IOT.
+   Automaticamente o Docker criará um container linux contendo node-red, onde poderemos fazer os nós de conexão dos dados mqtt e a plataforma IOT.
 
    No prompt de comando aparacerá o endereço para o acesso da pagina dos nós.
 
